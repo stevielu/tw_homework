@@ -1,0 +1,1371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12ECF67BE8E3A955E1326497 /* Pods_WechatMomentsTWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D64FD27115C024C033CB053 /* Pods_WechatMomentsTWTests.framework */; };
+		18CC1EF9230F83BA00E6FC5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1EF8230F83BA00E6FC5E /* AppDelegate.swift */; };
+		18CC1EFB230F83BA00E6FC5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1EFA230F83BA00E6FC5E /* ViewController.swift */; };
+		18CC1EFE230F83BA00E6FC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC1EFC230F83BA00E6FC5E /* Main.storyboard */; };
+		18CC1F00230F83BC00E6FC5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC1EFF230F83BC00E6FC5E /* Assets.xcassets */; };
+		18CC1F03230F83BC00E6FC5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC1F01230F83BC00E6FC5E /* LaunchScreen.storyboard */; };
+		18CC1F0E230F83BC00E6FC5E /* WechatMomentsTWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F0D230F83BC00E6FC5E /* WechatMomentsTWTests.swift */; };
+		18CC1F26230F893600E6FC5E /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F1D230F893600E6FC5E /* Model.framework */; };
+		18CC1F2D230F893600E6FC5E /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F2C230F893600E6FC5E /* ModelTests.swift */; };
+		18CC1F2F230F893600E6FC5E /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CC1F1F230F893600E6FC5E /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CC1F32230F893600E6FC5E /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F1D230F893600E6FC5E /* Model.framework */; };
+		18CC1F33230F893600E6FC5E /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F1D230F893600E6FC5E /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18CC1F49230F8F7900E6FC5E /* RXNetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */; };
+		18CC1F50230F8F7900E6FC5E /* RXNetworkPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F4F230F8F7900E6FC5E /* RXNetworkPlatformTests.swift */; };
+		18CC1F52230F8F7900E6FC5E /* RXNetworkPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CC1F42230F8F7900E6FC5E /* RXNetworkPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CC1F55230F8F7900E6FC5E /* RXNetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */; };
+		18CC1F56230F8F7900E6FC5E /* RXNetworkPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A5E020A53A1CA231536D823 /* Pods_WechatMomentsTW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5713A617D1A3C41FE91544C /* Pods_WechatMomentsTW.framework */; };
+		24CBAFDEA0C0CA9E6E5A6C92 /* Pods_RXNetworkPlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126EEFEE38C928343F2494F7 /* Pods_RXNetworkPlatformTests.framework */; };
+		2AED9DD284C67AF767903826 /* Pods_Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AF5AF04445C2F2D0AB8D54 /* Pods_Model.framework */; };
+		560E66A0CC72552603E1688E /* Pods_ModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8DABF5383219CE30B90B22 /* Pods_ModelTests.framework */; };
+		FEEBAC2F244F0EA4A0487673 /* Pods_RXNetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D765FD20C11A4ACB323F1B21 /* Pods_RXNetworkPlatform.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CC1F0A230F83BC00E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1EF4230F83BA00E6FC5E;
+			remoteInfo = WechatMomentsTW;
+		};
+		18CC1F27230F893600E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1F1C230F893600E6FC5E;
+			remoteInfo = Model;
+		};
+		18CC1F29230F893600E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1EF4230F83BA00E6FC5E;
+			remoteInfo = WechatMomentsTW;
+		};
+		18CC1F30230F893600E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1F1C230F893600E6FC5E;
+			remoteInfo = Model;
+		};
+		18CC1F4A230F8F7900E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1F3F230F8F7900E6FC5E;
+			remoteInfo = RXNetworkPlatform;
+		};
+		18CC1F4C230F8F7900E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1EF4230F83BA00E6FC5E;
+			remoteInfo = WechatMomentsTW;
+		};
+		18CC1F53230F8F7900E6FC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CC1EED230F83BA00E6FC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CC1F3F230F8F7900E6FC5E;
+			remoteInfo = RXNetworkPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18CC1F37230F893700E6FC5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18CC1F56230F8F7900E6FC5E /* RXNetworkPlatform.framework in Embed Frameworks */,
+				18CC1F33230F893600E6FC5E /* Model.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C8DABF5383219CE30B90B22 /* Pods_ModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D68EEDA516D3135EC1E0B25 /* Pods-Model.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.release.xcconfig"; path = "Pods/Target Support Files/Pods-Model/Pods-Model.release.xcconfig"; sourceTree = "<group>"; };
+		126EEFEE38C928343F2494F7 /* Pods_RXNetworkPlatformTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXNetworkPlatformTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1EF5230F83BA00E6FC5E /* WechatMomentsTW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatMomentsTW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1EF8230F83BA00E6FC5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18CC1EFA230F83BA00E6FC5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18CC1EFD230F83BA00E6FC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18CC1EFF230F83BC00E6FC5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CC1F02230F83BC00E6FC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18CC1F04230F83BC00E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC1F09230F83BC00E6FC5E /* WechatMomentsTWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechatMomentsTWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1F0D230F83BC00E6FC5E /* WechatMomentsTWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatMomentsTWTests.swift; sourceTree = "<group>"; };
+		18CC1F0F230F83BC00E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC1F1D230F893600E6FC5E /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1F1F230F893600E6FC5E /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		18CC1F20230F893600E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC1F25230F893600E6FC5E /* ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1F2C230F893600E6FC5E /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		18CC1F2E230F893600E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXNetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1F42230F8F7900E6FC5E /* RXNetworkPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXNetworkPlatform.h; sourceTree = "<group>"; };
+		18CC1F43230F8F7900E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC1F48230F8F7900E6FC5E /* RXNetworkPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXNetworkPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CC1F4F230F8F7900E6FC5E /* RXNetworkPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXNetworkPlatformTests.swift; sourceTree = "<group>"; };
+		18CC1F51230F8F7900E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C7D41D6C32E68D2BE0D8FE /* Pods-RXNetworkPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatform/Pods-RXNetworkPlatform.release.xcconfig"; sourceTree = "<group>"; };
+		40580919FFDCF8F1B11120B5 /* Pods-WechatMomentsTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMomentsTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMomentsTWTests/Pods-WechatMomentsTWTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A65DE4CA227B4D2C1E4716E /* Pods-RXNetworkPlatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatformTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatformTests/Pods-RXNetworkPlatformTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D64FD27115C024C033CB053 /* Pods_WechatMomentsTWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WechatMomentsTWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CA7FBEEF6EFB57697F90A5 /* Pods-ModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModelTests/Pods-ModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8715FFD32A11EB17884062E3 /* Pods-RXNetworkPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatform/Pods-RXNetworkPlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		9744DA86FC5A3D5CD063A960 /* Pods-RXNetworkPlatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatformTests/Pods-RXNetworkPlatformTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A5714DFC1232B653D726009 /* Pods-WechatMomentsTW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMomentsTW.release.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMomentsTW/Pods-WechatMomentsTW.release.xcconfig"; sourceTree = "<group>"; };
+		C3148A7FF4173D4F08F3E8FA /* Pods-WechatMomentsTW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMomentsTW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMomentsTW/Pods-WechatMomentsTW.debug.xcconfig"; sourceTree = "<group>"; };
+		C694200603EFD185034279F2 /* Pods-WechatMomentsTWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMomentsTWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMomentsTWTests/Pods-WechatMomentsTWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D765FD20C11A4ACB323F1B21 /* Pods_RXNetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXNetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77B97F2791A0429A6D853D1 /* Pods-Model.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Model/Pods-Model.debug.xcconfig"; sourceTree = "<group>"; };
+		D9AF5AF04445C2F2D0AB8D54 /* Pods_Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5713A617D1A3C41FE91544C /* Pods_WechatMomentsTW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WechatMomentsTW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF558B7EC6A2C2C4D01E20F /* Pods-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModelTests/Pods-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18CC1EF2230F83BA00E6FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F55230F8F7900E6FC5E /* RXNetworkPlatform.framework in Frameworks */,
+				18CC1F32230F893600E6FC5E /* Model.framework in Frameworks */,
+				1A5E020A53A1CA231536D823 /* Pods_WechatMomentsTW.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F06230F83BC00E6FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12ECF67BE8E3A955E1326497 /* Pods_WechatMomentsTWTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F1A230F893600E6FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AED9DD284C67AF767903826 /* Pods_Model.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F22230F893600E6FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F26230F893600E6FC5E /* Model.framework in Frameworks */,
+				560E66A0CC72552603E1688E /* Pods_ModelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F3D230F8F7900E6FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEBAC2F244F0EA4A0487673 /* Pods_RXNetworkPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F45230F8F7900E6FC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F49230F8F7900E6FC5E /* RXNetworkPlatform.framework in Frameworks */,
+				24CBAFDEA0C0CA9E6E5A6C92 /* Pods_RXNetworkPlatformTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18CC1EEC230F83BA00E6FC5E = {
+			isa = PBXGroup;
+			children = (
+				18CC1EF7230F83BA00E6FC5E /* WechatMomentsTW */,
+				18CC1F0C230F83BC00E6FC5E /* WechatMomentsTWTests */,
+				18CC1F1E230F893600E6FC5E /* Model */,
+				18CC1F2B230F893600E6FC5E /* ModelTests */,
+				18CC1F41230F8F7900E6FC5E /* RXNetworkPlatform */,
+				18CC1F4E230F8F7900E6FC5E /* RXNetworkPlatformTests */,
+				18CC1EF6230F83BA00E6FC5E /* Products */,
+				580716F0839430BC6D80CB13 /* Pods */,
+				3470CD4C74DCD0CD3A63E2B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18CC1EF6230F83BA00E6FC5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1EF5230F83BA00E6FC5E /* WechatMomentsTW.app */,
+				18CC1F09230F83BC00E6FC5E /* WechatMomentsTWTests.xctest */,
+				18CC1F1D230F893600E6FC5E /* Model.framework */,
+				18CC1F25230F893600E6FC5E /* ModelTests.xctest */,
+				18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */,
+				18CC1F48230F8F7900E6FC5E /* RXNetworkPlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18CC1EF7230F83BA00E6FC5E /* WechatMomentsTW */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F5E230F8F9400E6FC5E /* Base */,
+				18CC1F5D230F8F8A00E6FC5E /* Utility */,
+				18CC1EF8230F83BA00E6FC5E /* AppDelegate.swift */,
+				18CC1EFA230F83BA00E6FC5E /* ViewController.swift */,
+				18CC1EFC230F83BA00E6FC5E /* Main.storyboard */,
+				18CC1EFF230F83BC00E6FC5E /* Assets.xcassets */,
+				18CC1F01230F83BC00E6FC5E /* LaunchScreen.storyboard */,
+				18CC1F04230F83BC00E6FC5E /* Info.plist */,
+			);
+			path = WechatMomentsTW;
+			sourceTree = "<group>";
+		};
+		18CC1F0C230F83BC00E6FC5E /* WechatMomentsTWTests */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F0D230F83BC00E6FC5E /* WechatMomentsTWTests.swift */,
+				18CC1F0F230F83BC00E6FC5E /* Info.plist */,
+			);
+			path = WechatMomentsTWTests;
+			sourceTree = "<group>";
+		};
+		18CC1F1E230F893600E6FC5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F1F230F893600E6FC5E /* Model.h */,
+				18CC1F20230F893600E6FC5E /* Info.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18CC1F2B230F893600E6FC5E /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F2C230F893600E6FC5E /* ModelTests.swift */,
+				18CC1F2E230F893600E6FC5E /* Info.plist */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		18CC1F41230F8F7900E6FC5E /* RXNetworkPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F42230F8F7900E6FC5E /* RXNetworkPlatform.h */,
+				18CC1F43230F8F7900E6FC5E /* Info.plist */,
+			);
+			path = RXNetworkPlatform;
+			sourceTree = "<group>";
+		};
+		18CC1F4E230F8F7900E6FC5E /* RXNetworkPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F4F230F8F7900E6FC5E /* RXNetworkPlatformTests.swift */,
+				18CC1F51230F8F7900E6FC5E /* Info.plist */,
+			);
+			path = RXNetworkPlatformTests;
+			sourceTree = "<group>";
+		};
+		18CC1F5D230F8F8A00E6FC5E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18CC1F5E230F8F9400E6FC5E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3470CD4C74DCD0CD3A63E2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9AF5AF04445C2F2D0AB8D54 /* Pods_Model.framework */,
+				0C8DABF5383219CE30B90B22 /* Pods_ModelTests.framework */,
+				D765FD20C11A4ACB323F1B21 /* Pods_RXNetworkPlatform.framework */,
+				126EEFEE38C928343F2494F7 /* Pods_RXNetworkPlatformTests.framework */,
+				E5713A617D1A3C41FE91544C /* Pods_WechatMomentsTW.framework */,
+				7D64FD27115C024C033CB053 /* Pods_WechatMomentsTWTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		580716F0839430BC6D80CB13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D77B97F2791A0429A6D853D1 /* Pods-Model.debug.xcconfig */,
+				0D68EEDA516D3135EC1E0B25 /* Pods-Model.release.xcconfig */,
+				84CA7FBEEF6EFB57697F90A5 /* Pods-ModelTests.debug.xcconfig */,
+				FFF558B7EC6A2C2C4D01E20F /* Pods-ModelTests.release.xcconfig */,
+				8715FFD32A11EB17884062E3 /* Pods-RXNetworkPlatform.debug.xcconfig */,
+				19C7D41D6C32E68D2BE0D8FE /* Pods-RXNetworkPlatform.release.xcconfig */,
+				7A65DE4CA227B4D2C1E4716E /* Pods-RXNetworkPlatformTests.debug.xcconfig */,
+				9744DA86FC5A3D5CD063A960 /* Pods-RXNetworkPlatformTests.release.xcconfig */,
+				C3148A7FF4173D4F08F3E8FA /* Pods-WechatMomentsTW.debug.xcconfig */,
+				9A5714DFC1232B653D726009 /* Pods-WechatMomentsTW.release.xcconfig */,
+				C694200603EFD185034279F2 /* Pods-WechatMomentsTWTests.debug.xcconfig */,
+				40580919FFDCF8F1B11120B5 /* Pods-WechatMomentsTWTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18CC1F18230F893600E6FC5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F2F230F893600E6FC5E /* Model.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F3B230F8F7900E6FC5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F52230F8F7900E6FC5E /* RXNetworkPlatform.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18CC1EF4230F83BA00E6FC5E /* WechatMomentsTW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CC1F12230F83BC00E6FC5E /* Build configuration list for PBXNativeTarget "WechatMomentsTW" */;
+			buildPhases = (
+				CEA46EAFE054E60FF3A5474D /* [CP] Check Pods Manifest.lock */,
+				18CC1EF1230F83BA00E6FC5E /* Sources */,
+				18CC1EF2230F83BA00E6FC5E /* Frameworks */,
+				18CC1EF3230F83BA00E6FC5E /* Resources */,
+				18CC1F37230F893700E6FC5E /* Embed Frameworks */,
+				E001FBE6C18A719E6F4CE6D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CC1F31230F893600E6FC5E /* PBXTargetDependency */,
+				18CC1F54230F8F7900E6FC5E /* PBXTargetDependency */,
+			);
+			name = WechatMomentsTW;
+			productName = WechatMomentsTW;
+			productReference = 18CC1EF5230F83BA00E6FC5E /* WechatMomentsTW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18CC1F08230F83BC00E6FC5E /* WechatMomentsTWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CC1F15230F83BC00E6FC5E /* Build configuration list for PBXNativeTarget "WechatMomentsTWTests" */;
+			buildPhases = (
+				64960BBD415FC9C2A2D31F15 /* [CP] Check Pods Manifest.lock */,
+				18CC1F05230F83BC00E6FC5E /* Sources */,
+				18CC1F06230F83BC00E6FC5E /* Frameworks */,
+				18CC1F07230F83BC00E6FC5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CC1F0B230F83BC00E6FC5E /* PBXTargetDependency */,
+			);
+			name = WechatMomentsTWTests;
+			productName = WechatMomentsTWTests;
+			productReference = 18CC1F09230F83BC00E6FC5E /* WechatMomentsTWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18CC1F1C230F893600E6FC5E /* Model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CC1F34230F893700E6FC5E /* Build configuration list for PBXNativeTarget "Model" */;
+			buildPhases = (
+				5FA369DC42811A068EDE7B0F /* [CP] Check Pods Manifest.lock */,
+				18CC1F18230F893600E6FC5E /* Headers */,
+				18CC1F19230F893600E6FC5E /* Sources */,
+				18CC1F1A230F893600E6FC5E /* Frameworks */,
+				18CC1F1B230F893600E6FC5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Model;
+			productName = Model;
+			productReference = 18CC1F1D230F893600E6FC5E /* Model.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18CC1F24230F893600E6FC5E /* ModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CC1F38230F893700E6FC5E /* Build configuration list for PBXNativeTarget "ModelTests" */;
+			buildPhases = (
+				2F6E19C979FBBB293B6725FA /* [CP] Check Pods Manifest.lock */,
+				18CC1F21230F893600E6FC5E /* Sources */,
+				18CC1F22230F893600E6FC5E /* Frameworks */,
+				18CC1F23230F893600E6FC5E /* Resources */,
+				F79BC2ED3D34EB14BC5C8459 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CC1F28230F893600E6FC5E /* PBXTargetDependency */,
+				18CC1F2A230F893600E6FC5E /* PBXTargetDependency */,
+			);
+			name = ModelTests;
+			productName = ModelTests;
+			productReference = 18CC1F25230F893600E6FC5E /* ModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18CC1F3F230F8F7900E6FC5E /* RXNetworkPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CC1F57230F8F7900E6FC5E /* Build configuration list for PBXNativeTarget "RXNetworkPlatform" */;
+			buildPhases = (
+				8E39A89BAA2C120747B11C5A /* [CP] Check Pods Manifest.lock */,
+				18CC1F3B230F8F7900E6FC5E /* Headers */,
+				18CC1F3C230F8F7900E6FC5E /* Sources */,
+				18CC1F3D230F8F7900E6FC5E /* Frameworks */,
+				18CC1F3E230F8F7900E6FC5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXNetworkPlatform;
+			productName = RXNetworkPlatform;
+			productReference = 18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18CC1F47230F8F7900E6FC5E /* RXNetworkPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CC1F5A230F8F7900E6FC5E /* Build configuration list for PBXNativeTarget "RXNetworkPlatformTests" */;
+			buildPhases = (
+				322587656B93D0BAFA5F533D /* [CP] Check Pods Manifest.lock */,
+				18CC1F44230F8F7900E6FC5E /* Sources */,
+				18CC1F45230F8F7900E6FC5E /* Frameworks */,
+				18CC1F46230F8F7900E6FC5E /* Resources */,
+				A1B6674F3FF9ABB2226894BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CC1F4B230F8F7900E6FC5E /* PBXTargetDependency */,
+				18CC1F4D230F8F7900E6FC5E /* PBXTargetDependency */,
+			);
+			name = RXNetworkPlatformTests;
+			productName = RXNetworkPlatformTests;
+			productReference = 18CC1F48230F8F7900E6FC5E /* RXNetworkPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18CC1EED230F83BA00E6FC5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = vcon;
+				TargetAttributes = {
+					18CC1EF4230F83BA00E6FC5E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					18CC1F08230F83BC00E6FC5E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 18CC1EF4230F83BA00E6FC5E;
+					};
+					18CC1F1C230F893600E6FC5E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					18CC1F24230F893600E6FC5E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 18CC1EF4230F83BA00E6FC5E;
+					};
+					18CC1F3F230F8F7900E6FC5E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					18CC1F47230F8F7900E6FC5E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 18CC1EF4230F83BA00E6FC5E;
+					};
+				};
+			};
+			buildConfigurationList = 18CC1EF0230F83BA00E6FC5E /* Build configuration list for PBXProject "WechatMomentsTW" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18CC1EEC230F83BA00E6FC5E;
+			productRefGroup = 18CC1EF6230F83BA00E6FC5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18CC1EF4230F83BA00E6FC5E /* WechatMomentsTW */,
+				18CC1F08230F83BC00E6FC5E /* WechatMomentsTWTests */,
+				18CC1F1C230F893600E6FC5E /* Model */,
+				18CC1F24230F893600E6FC5E /* ModelTests */,
+				18CC1F3F230F8F7900E6FC5E /* RXNetworkPlatform */,
+				18CC1F47230F8F7900E6FC5E /* RXNetworkPlatformTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18CC1EF3230F83BA00E6FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F03230F83BC00E6FC5E /* LaunchScreen.storyboard in Resources */,
+				18CC1F00230F83BC00E6FC5E /* Assets.xcassets in Resources */,
+				18CC1EFE230F83BA00E6FC5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F07230F83BC00E6FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F1B230F893600E6FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F23230F893600E6FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F3E230F8F7900E6FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F46230F8F7900E6FC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F6E19C979FBBB293B6725FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		322587656B93D0BAFA5F533D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXNetworkPlatformTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FA369DC42811A068EDE7B0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Model-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64960BBD415FC9C2A2D31F15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WechatMomentsTWTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E39A89BAA2C120747B11C5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXNetworkPlatform-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B6674F3FF9ABB2226894BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RXNetworkPlatformTests/Pods-RXNetworkPlatformTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXNetworkPlatformTests/Pods-RXNetworkPlatformTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA46EAFE054E60FF3A5474D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WechatMomentsTW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E001FBE6C18A719E6F4CE6D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WechatMomentsTW/Pods-WechatMomentsTW-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WechatMomentsTW/Pods-WechatMomentsTW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79BC2ED3D34EB14BC5C8459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ModelTests/Pods-ModelTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModelTests/Pods-ModelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18CC1EF1230F83BA00E6FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1EFB230F83BA00E6FC5E /* ViewController.swift in Sources */,
+				18CC1EF9230F83BA00E6FC5E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F05230F83BC00E6FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F0E230F83BC00E6FC5E /* WechatMomentsTWTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F19230F893600E6FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F21230F893600E6FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F2D230F893600E6FC5E /* ModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F3C230F8F7900E6FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CC1F44230F8F7900E6FC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC1F50230F8F7900E6FC5E /* RXNetworkPlatformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18CC1F0B230F83BC00E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1EF4230F83BA00E6FC5E /* WechatMomentsTW */;
+			targetProxy = 18CC1F0A230F83BC00E6FC5E /* PBXContainerItemProxy */;
+		};
+		18CC1F28230F893600E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1F1C230F893600E6FC5E /* Model */;
+			targetProxy = 18CC1F27230F893600E6FC5E /* PBXContainerItemProxy */;
+		};
+		18CC1F2A230F893600E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1EF4230F83BA00E6FC5E /* WechatMomentsTW */;
+			targetProxy = 18CC1F29230F893600E6FC5E /* PBXContainerItemProxy */;
+		};
+		18CC1F31230F893600E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1F1C230F893600E6FC5E /* Model */;
+			targetProxy = 18CC1F30230F893600E6FC5E /* PBXContainerItemProxy */;
+		};
+		18CC1F4B230F8F7900E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1F3F230F8F7900E6FC5E /* RXNetworkPlatform */;
+			targetProxy = 18CC1F4A230F8F7900E6FC5E /* PBXContainerItemProxy */;
+		};
+		18CC1F4D230F8F7900E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1EF4230F83BA00E6FC5E /* WechatMomentsTW */;
+			targetProxy = 18CC1F4C230F8F7900E6FC5E /* PBXContainerItemProxy */;
+		};
+		18CC1F54230F8F7900E6FC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CC1F3F230F8F7900E6FC5E /* RXNetworkPlatform */;
+			targetProxy = 18CC1F53230F8F7900E6FC5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18CC1EFC230F83BA00E6FC5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CC1EFD230F83BA00E6FC5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18CC1F01230F83BC00E6FC5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CC1F02230F83BC00E6FC5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18CC1F10230F83BC00E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18CC1F11230F83BC00E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18CC1F13230F83BC00E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3148A7FF4173D4F08F3E8FA /* Pods-WechatMomentsTW.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = WechatMomentsTW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.WechatMomentsTW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18CC1F14230F83BC00E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5714DFC1232B653D726009 /* Pods-WechatMomentsTW.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = WechatMomentsTW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.WechatMomentsTW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18CC1F16230F83BC00E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C694200603EFD185034279F2 /* Pods-WechatMomentsTWTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = WechatMomentsTWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.WechatMomentsTWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatMomentsTW.app/WechatMomentsTW";
+			};
+			name = Debug;
+		};
+		18CC1F17230F83BC00E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40580919FFDCF8F1B11120B5 /* Pods-WechatMomentsTWTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = WechatMomentsTWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.WechatMomentsTWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatMomentsTW.app/WechatMomentsTW";
+			};
+			name = Release;
+		};
+		18CC1F35230F893700E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77B97F2791A0429A6D853D1 /* Pods-Model.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Model/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.Model;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18CC1F36230F893700E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D68EEDA516D3135EC1E0B25 /* Pods-Model.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Model/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.Model;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18CC1F39230F893700E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CA7FBEEF6EFB57697F90A5 /* Pods-ModelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = ModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.ModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatMomentsTW.app/WechatMomentsTW";
+			};
+			name = Debug;
+		};
+		18CC1F3A230F893700E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF558B7EC6A2C2C4D01E20F /* Pods-ModelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = ModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.ModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatMomentsTW.app/WechatMomentsTW";
+			};
+			name = Release;
+		};
+		18CC1F58230F8F7900E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8715FFD32A11EB17884062E3 /* Pods-RXNetworkPlatform.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RXNetworkPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.RXNetworkPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18CC1F59230F8F7900E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C7D41D6C32E68D2BE0D8FE /* Pods-RXNetworkPlatform.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RXNetworkPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.RXNetworkPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18CC1F5B230F8F7900E6FC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A65DE4CA227B4D2C1E4716E /* Pods-RXNetworkPlatformTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = RXNetworkPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.RXNetworkPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatMomentsTW.app/WechatMomentsTW";
+			};
+			name = Debug;
+		};
+		18CC1F5C230F8F7900E6FC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9744DA86FC5A3D5CD063A960 /* Pods-RXNetworkPlatformTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93GLL3KN8J;
+				INFOPLIST_FILE = RXNetworkPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.RXNetworkPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatMomentsTW.app/WechatMomentsTW";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18CC1EF0230F83BA00E6FC5E /* Build configuration list for PBXProject "WechatMomentsTW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F10230F83BC00E6FC5E /* Debug */,
+				18CC1F11230F83BC00E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CC1F12230F83BC00E6FC5E /* Build configuration list for PBXNativeTarget "WechatMomentsTW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F13230F83BC00E6FC5E /* Debug */,
+				18CC1F14230F83BC00E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CC1F15230F83BC00E6FC5E /* Build configuration list for PBXNativeTarget "WechatMomentsTWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F16230F83BC00E6FC5E /* Debug */,
+				18CC1F17230F83BC00E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CC1F34230F893700E6FC5E /* Build configuration list for PBXNativeTarget "Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F35230F893700E6FC5E /* Debug */,
+				18CC1F36230F893700E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CC1F38230F893700E6FC5E /* Build configuration list for PBXNativeTarget "ModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F39230F893700E6FC5E /* Debug */,
+				18CC1F3A230F893700E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CC1F57230F8F7900E6FC5E /* Build configuration list for PBXNativeTarget "RXNetworkPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F58230F8F7900E6FC5E /* Debug */,
+				18CC1F59230F8F7900E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CC1F5A230F8F7900E6FC5E /* Build configuration list for PBXNativeTarget "RXNetworkPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CC1F5B230F8F7900E6FC5E /* Debug */,
+				18CC1F5C230F8F7900E6FC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18CC1EED230F83BA00E6FC5E /* Project object */;
+}

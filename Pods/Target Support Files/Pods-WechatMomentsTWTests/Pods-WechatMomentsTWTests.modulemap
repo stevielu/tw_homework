@@ -1,0 +1,6 @@
+framework module Pods_WechatMomentsTWTests {
+  umbrella header "Pods-WechatMomentsTWTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
