@@ -24,6 +24,10 @@
 		18CC1F52230F8F7900E6FC5E /* RXNetworkPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CC1F42230F8F7900E6FC5E /* RXNetworkPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18CC1F55230F8F7900E6FC5E /* RXNetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */; };
 		18CC1F56230F8F7900E6FC5E /* RXNetworkPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC1F40230F8F7900E6FC5E /* RXNetworkPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18CC1F64230F936D00E6FC5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F63230F936D00E6FC5E /* User.swift */; };
+		18CC1F69230FA5D500E6FC5E /* UserCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F68230FA5D500E6FC5E /* UserCases.swift */; };
+		18CC1F6B230FA61300E6FC5E /* UserCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F6A230FA61300E6FC5E /* UserCaseProvider.swift */; };
+		18CC1F6D230FA6CC00E6FC5E /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1F6C230FA6CC00E6FC5E /* Tweets.swift */; };
 		1A5E020A53A1CA231536D823 /* Pods_WechatMomentsTW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5713A617D1A3C41FE91544C /* Pods_WechatMomentsTW.framework */; };
 		24CBAFDEA0C0CA9E6E5A6C92 /* Pods_RXNetworkPlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126EEFEE38C928343F2494F7 /* Pods_RXNetworkPlatformTests.framework */; };
 		2AED9DD284C67AF767903826 /* Pods_Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AF5AF04445C2F2D0AB8D54 /* Pods_Model.framework */; };
@@ -124,6 +128,10 @@
 		18CC1F48230F8F7900E6FC5E /* RXNetworkPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXNetworkPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC1F4F230F8F7900E6FC5E /* RXNetworkPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXNetworkPlatformTests.swift; sourceTree = "<group>"; };
 		18CC1F51230F8F7900E6FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC1F63230F936D00E6FC5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		18CC1F68230FA5D500E6FC5E /* UserCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCases.swift; sourceTree = "<group>"; };
+		18CC1F6A230FA61300E6FC5E /* UserCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCaseProvider.swift; sourceTree = "<group>"; };
+		18CC1F6C230FA6CC00E6FC5E /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
 		19C7D41D6C32E68D2BE0D8FE /* Pods-RXNetworkPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatform/Pods-RXNetworkPlatform.release.xcconfig"; sourceTree = "<group>"; };
 		40580919FFDCF8F1B11120B5 /* Pods-WechatMomentsTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatMomentsTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WechatMomentsTWTests/Pods-WechatMomentsTWTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A65DE4CA227B4D2C1E4716E /* Pods-RXNetworkPlatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatformTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatformTests/Pods-RXNetworkPlatformTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +260,9 @@
 		18CC1F1E230F893600E6FC5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18CC1F60230F924100E6FC5E /* Entries */,
+				18CC1F67230FA55C00E6FC5E /* Cases */,
+				18CC1F5F230F923B00E6FC5E /* Base */,
 				18CC1F1F230F893600E6FC5E /* Model.h */,
 				18CC1F20230F893600E6FC5E /* Info.plist */,
 			);
@@ -297,6 +308,31 @@
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		18CC1F5F230F923B00E6FC5E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18CC1F60230F924100E6FC5E /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F63230F936D00E6FC5E /* User.swift */,
+				18CC1F6C230FA6CC00E6FC5E /* Tweets.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		18CC1F67230FA55C00E6FC5E /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				18CC1F68230FA5D500E6FC5E /* UserCases.swift */,
+				18CC1F6A230FA61300E6FC5E /* UserCaseProvider.swift */,
+			);
+			path = Cases;
 			sourceTree = "<group>";
 		};
 		3470CD4C74DCD0CD3A63E2B2 /* Frameworks */ = {
@@ -493,6 +529,7 @@
 					};
 					18CC1F1C230F893600E6FC5E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					18CC1F24230F893600E6FC5E = {
 						CreatedOnToolsVersion = 10.1;
@@ -815,6 +852,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CC1F69230FA5D500E6FC5E /* UserCases.swift in Sources */,
+				18CC1F64230F936D00E6FC5E /* User.swift in Sources */,
+				18CC1F6B230FA61300E6FC5E /* UserCaseProvider.swift in Sources */,
+				18CC1F6D230FA6CC00E6FC5E /* Tweets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,6 +1062,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3148A7FF4173D4F08F3E8FA /* Pods-WechatMomentsTW.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93GLL3KN8J;
@@ -1040,6 +1082,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A5714DFC1232B653D726009 /* Pods-WechatMomentsTW.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93GLL3KN8J;
@@ -1103,6 +1146,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D77B97F2791A0429A6D853D1 /* Pods-Model.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1121,6 +1165,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vcon.Model;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1132,6 +1177,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D68EEDA516D3135EC1E0B25 /* Pods-Model.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
