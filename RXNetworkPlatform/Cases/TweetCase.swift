@@ -24,18 +24,12 @@ final class TweetCase<Cache>:Model.TweetCase where Cache:DefaultCache{
         return self.network.fetchTweets(userId: uid)
     }
     
-    func fetchTweetImage(ImageUrl url: String) -> Observable<Data> {
-        let fetchPhoto = cache.fetch(withPath: url).asObservable()
-        fetchPhoto.subscribe{ maybe in
-            switch maybe{
-            case .completed:
-                
-            case .next(_):
-                <#code#>
-            case .error(_):
-                <#code#>
-            }
-        }
+    func fetchTweetImage(ImageUrl url: String) -> Observable<UIImage> {
+        let fetchCache = cache.fetch(withPath: url).asObservable()
+        let fetchNetwork = self.network.fetchImg(absoluteImgUrl: url).map(data -> UIImage in
+            self.cache.save(objects: data)
+        )
+        return fetchCache.concat(fetchNetwork)
     }
     
     
