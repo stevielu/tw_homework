@@ -15,5 +15,13 @@ final class NetworkProvider{
         apiEndpoint = "http://thoughtworks-ios.herokuapp.com/"
     }
     
+    public func makeUserNetworkProvider() -> UserNetwork{
+        let network = Network<User>(apiEndpoint)
+        return UserNetwork(network: network)
+    }
     
+    public func makeTweetsNetworkProvider() -> TweetsNetwork{
+        let network = Network<Tweet>(apiEndpoint)
+        return TweetsNetwork(network: network)
+    }
 }

@@ -8,34 +8,29 @@
 
 import Foundation
 
-struct TweetList:Codable {
+public struct TweetList:Codable {
     public let list:[Tweet]
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         var topContainer = try decoder.unkeyedContainer()
         list = try topContainer.decode([Tweet].self)
     }
-    
-    
 }
 
-struct Tweet:Codable {
+public struct Tweet:Codable {
     public let content:String?
-    public let images:[ImagesKeys]?
+    public let images:[PhotoGroup]?
     public let comments:Comments?
     public let sender:User?
     public let unknown: String?
-    
-    struct Comments:Codable {
-        public let sender:User?
-        public let content:String?
-    }
-    
-    
 }
 
-struct ImagesKeys:Codable {
+public struct Comments:Codable {
+    public let sender:User?
+    public let content:String?
+}
+
+public struct PhotoGroup:Codable{
     public let url:String?
 }
-
 

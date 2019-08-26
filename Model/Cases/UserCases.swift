@@ -9,5 +9,5 @@
 import Foundation
 import RxSwift
 public protocol UsersCase {
-    func get() -> Observable<[User]>
+    func fetch() -> Observable<[User]>
 }

@@ -44,6 +44,17 @@ final class Network<T: Decodable> {
             })
     }
     
+    func getImage(_ path: String) -> Observable<Data> {
+        let absolutePath = path
+        return RxAlamofire
+            .data(.get, absolutePath)
+            .debug()
+            .observeOn(scheduler)
+            .map({ data -> Data in
+                return data
+            })
+    }
+    
     func postItem(_ path: String, parameters: [String: Any]) -> Observable<T> {
         let absolutePath = "\(endPoint)/\(path)"
         return RxAlamofire

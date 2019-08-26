@@ -17,10 +17,10 @@ public final class UserNetwork{
     }
     
     public func fetchUser(userId:String) -> Observable<User>{
-        return self.network.getItem("", itemId: userId)
+        return self.network.getItem("user", itemId: userId)
     }
     
     public func fetchUsers() -> Observable<[User]>{
-        return self.network.getItems("")
+        return self.network.getItems("user")
     }
 }
