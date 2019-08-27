@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 public protocol TweetCase {
     func fetchTweets(UserId uid: String) -> Observable<[Tweet]>
-    func fetchTweetImage(ImageUrl url:String ) -> Observable<UIImage>
+    func fetchTweetImage(ImageUrl url:String ) -> Observable<Data>
 }

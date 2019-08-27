@@ -10,7 +10,7 @@ import Foundation
 import Model
 import RxSwift
 
-final class TweetCase<Cache>:Model.TweetCase where Cache:DefaultCache{
+final class TweetCase<Cache>:Model.TweetCase where Cache:DefaultCache,Cache.T == Data{
     
     private let network: TweetsNetwork
     private let cache: Cache
@@ -24,12 +24,15 @@ final class TweetCase<Cache>:Model.TweetCase where Cache:DefaultCache{
         return self.network.fetchTweets(userId: uid)
     }
     
-    func fetchTweetImage(ImageUrl url: String) -> Observable<UIImage> {
-        let fetchCache = cache.fetch(withPath: url).asObservable()
-        let fetchNetwork = self.network.fetchImg(absoluteImgUrl: url).map(data -> UIImage in
-            self.cache.save(objects: data)
-        )
-        return fetchCache.concat(fetchNetwork)
+    func fetchTweetImage(ImageUrl url: String) -> Observable<Data> {
+        let local = cache.fetch(withPath: url).asObservable()
+        let fetchNetwork = self.network.fetchImg(absoluteImgUrl: url).flatMap {data in
+            return self.cache.save(object:data, withPath: url)
+                .asObservable()
+                .map(Data.self)
+                .concat(Observable.just(data))
+        }
+        return local.concat(fetchNetwork)
     }
     
     

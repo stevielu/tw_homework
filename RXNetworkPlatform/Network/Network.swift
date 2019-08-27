@@ -50,9 +50,6 @@ final class Network<T: Decodable> {
             .data(.get, absolutePath)
             .debug()
             .observeOn(scheduler)
-            .map({ data -> Data in
-                return data
-            })
     }
     
     func postItem(_ path: String, parameters: [String: Any]) -> Observable<T> {

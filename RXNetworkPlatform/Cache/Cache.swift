@@ -16,13 +16,8 @@ protocol DefaultCache {
 
 final class TWCache<T>:DefaultCache{
     
-    private let path: String
     private let cacheScheduler = SerialDispatchQueueScheduler(internalSerialQueueName: "com.TWWechat.Network.Cache.queue")
     private var cache = NSCache<AnyObject, AnyObject>()
-    
-    init(path: String) {
-        self.path = path
-    }
     
     
     func save(object: T,withPath path:String) -> Completable {
