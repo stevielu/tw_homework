@@ -14,6 +14,8 @@
 		182C830E23151717008DF562 /* TWGlobalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C830D23151717008DF562 /* TWGlobalValue.swift */; };
 		182C831023151731008DF562 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C830F23151731008DF562 /* BaseObject.swift */; };
 		182C83132315197A008DF562 /* TWKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C83122315197A008DF562 /* TWKeychain.swift */; };
+		182C8315231532EF008DF562 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C8314231532EF008DF562 /* ViewModelType.swift */; };
+		182C831823153489008DF562 /* MomentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C831723153489008DF562 /* MomentsViewModel.swift */; };
 		18CC1EF9230F83BA00E6FC5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1EF8230F83BA00E6FC5E /* AppDelegate.swift */; };
 		18CC1EFB230F83BA00E6FC5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC1EFA230F83BA00E6FC5E /* ViewController.swift */; };
 		18CC1EFE230F83BA00E6FC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC1EFC230F83BA00E6FC5E /* Main.storyboard */; };
@@ -128,6 +130,8 @@
 		182C830F23151731008DF562 /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		182C8311231518EA008DF562 /* WechatMomentsTW.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WechatMomentsTW.entitlements; sourceTree = "<group>"; };
 		182C83122315197A008DF562 /* TWKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWKeychain.swift; sourceTree = "<group>"; };
+		182C8314231532EF008DF562 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		182C831723153489008DF562 /* MomentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsViewModel.swift; sourceTree = "<group>"; };
 		18CC1EF5230F83BA00E6FC5E /* WechatMomentsTW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatMomentsTW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC1EF8230F83BA00E6FC5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CC1EFA230F83BA00E6FC5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 		1810A0C323137182009D8E9F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				182C831623153310008DF562 /* Moments */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -259,6 +264,14 @@
 				7282005423147AF200EFDDD6 /* TweetCaseProvider.swift */,
 			);
 			path = Tweets;
+			sourceTree = "<group>";
+		};
+		182C831623153310008DF562 /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				182C831723153489008DF562 /* MomentsViewModel.swift */,
+			);
+			path = Moments;
 			sourceTree = "<group>";
 		};
 		18CC1EEC230F83BA00E6FC5E = {
@@ -370,6 +383,7 @@
 			children = (
 				182C830D23151717008DF562 /* TWGlobalValue.swift */,
 				182C830F23151731008DF562 /* BaseObject.swift */,
+				182C8314231532EF008DF562 /* ViewModelType.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -941,7 +955,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				182C83132315197A008DF562 /* TWKeychain.swift in Sources */,
+				182C831823153489008DF562 /* MomentsViewModel.swift in Sources */,
 				18CC1EFB230F83BA00E6FC5E /* ViewController.swift in Sources */,
+				182C8315231532EF008DF562 /* ViewModelType.swift in Sources */,
 				182C831023151731008DF562 /* BaseObject.swift in Sources */,
 				18CC1EF9230F83BA00E6FC5E /* AppDelegate.swift in Sources */,
 				182C830E23151717008DF562 /* TWGlobalValue.swift in Sources */,
