@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
+  - KeychainSwift (13.0.0)
   - RxAlamofire (4.3.0):
     - RxAlamofire/Core (= 4.3.0)
   - RxAlamofire/Core (4.3.0):
@@ -11,22 +12,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - KeychainSwift
   - RxAlamofire
   - RxSwift (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - KeychainSwift
     - RxAlamofire
     - RxAtomic
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 2e9ce58f25e17612145c5345dc85af8d9b0baa50
+PODFILE CHECKSUM: b23facd71c379b6ccadc49e23d96f3599ce59be6
 
 COCOAPODS: 1.5.3
