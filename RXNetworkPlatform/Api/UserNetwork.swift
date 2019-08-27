@@ -23,4 +23,8 @@ public final class UserNetwork{
     public func fetchUsers() -> Observable<[User]>{
         return self.network.getItems("user")
     }
+    
+    public func fetchImg(absoluteImgUrl:String) -> Observable<Data>{
+        return self.network.getImage(absoluteImgUrl)
+    }
 }

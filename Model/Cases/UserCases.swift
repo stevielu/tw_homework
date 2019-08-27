@@ -9,5 +9,7 @@
 import Foundation
 import RxSwift
 public protocol UsersCase {
-    func fetch() -> Observable<[User]>
+    func fetch(UserId uid:String) -> Observable<User>
+    func userAvatar(ImageUrl url:String ) -> Observable<Data>
+    func userProfile(ImageUrl url:String ) -> Observable<Data>
 }
