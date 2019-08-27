@@ -40,6 +40,7 @@
 		723EC8E22311B4A700CFA2D4 /* TweetCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EC8E12311B4A700CFA2D4 /* TweetCase.swift */; };
 		723EC8E42311B4D300CFA2D4 /* TweetCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EC8E32311B4D300CFA2D4 /* TweetCases.swift */; };
 		723EC8E62311B4E200CFA2D4 /* TweetCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EC8E52311B4E200CFA2D4 /* TweetCaseProvider.swift */; };
+		7282005523147AF200EFDDD6 /* TweetCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282005423147AF200EFDDD6 /* TweetCaseProvider.swift */; };
 		FEEBAC2F244F0EA4A0487673 /* Pods_RXNetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D765FD20C11A4ACB323F1B21 /* Pods_RXNetworkPlatform.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +151,7 @@
 		723EC8E12311B4A700CFA2D4 /* TweetCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCase.swift; sourceTree = "<group>"; };
 		723EC8E32311B4D300CFA2D4 /* TweetCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCases.swift; sourceTree = "<group>"; };
 		723EC8E52311B4E200CFA2D4 /* TweetCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCaseProvider.swift; sourceTree = "<group>"; };
+		7282005423147AF200EFDDD6 /* TweetCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCaseProvider.swift; sourceTree = "<group>"; };
 		7A65DE4CA227B4D2C1E4716E /* Pods-RXNetworkPlatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXNetworkPlatformTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXNetworkPlatformTests/Pods-RXNetworkPlatformTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D64FD27115C024C033CB053 /* Pods_WechatMomentsTWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WechatMomentsTWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA7FBEEF6EFB57697F90A5 /* Pods-ModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModelTests/Pods-ModelTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				723EC8E12311B4A700CFA2D4 /* TweetCase.swift */,
+				7282005423147AF200EFDDD6 /* TweetCaseProvider.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -934,6 +937,7 @@
 				723EC8E22311B4A700CFA2D4 /* TweetCase.swift in Sources */,
 				723EC8DB231147B100CFA2D4 /* Cache.swift in Sources */,
 				18CC1F75230FEB3F00E6FC5E /* UserNetwork.swift in Sources */,
+				7282005523147AF200EFDDD6 /* TweetCaseProvider.swift in Sources */,
 				18CC1F70230FEA2A00E6FC5E /* Network.swift in Sources */,
 				18CC1F72230FEAA400E6FC5E /* NetworkProvider.swift in Sources */,
 			);
