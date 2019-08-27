@@ -10,8 +10,8 @@ import Foundation
 import RxSwift
 protocol DefaultCache {
     associatedtype T
-    func save(object: T,withPath path:String) -> Completable
-    func fetch(withPath path: String) -> Maybe<T>
+    func save(object: T,withPath path:String)
+    func fetch(withPath path: String) -> Observable<T>
 }
 
 final class TWCache<T>:DefaultCache{
@@ -19,23 +19,23 @@ final class TWCache<T>:DefaultCache{
     private let cacheScheduler = SerialDispatchQueueScheduler(internalSerialQueueName: "com.TWWechat.Network.Cache.queue")
     private var cache = NSCache<AnyObject, AnyObject>()
     
+//    enum ReadStrategy {
+//        case ReadOnly//read cache only
+//        case ReadFirst//read cache first,and save it depends on if empty in cache
+//        case WriteFirst//save cache each request
+//    }
     
-    func save(object: T,withPath path:String) -> Completable {
-        return Completable.create { (observer) -> Disposable in
-            self.cache.setObject(object as AnyObject, forKey: path as AnyObject)
-            
-            observer(.completed)
-            return Disposables.create()
-            }.subscribeOn(cacheScheduler)
+    func save(object: T,withPath path:String) {
+        self.cache.setObject(object as AnyObject, forKey: path as AnyObject)
     }
     
-    func fetch(withPath path: String) -> Maybe<T> {
-        return Maybe<T>.create { (observer) -> Disposable in
+    func fetch(withPath path: String) -> Observable<T> {
+        return Observable<T>.create { (observer) -> Disposable in
             guard let object = self.cache.object(forKey: path as AnyObject) as? T else {
-                observer(.completed)
+                observer.on(.completed)
                 return Disposables.create()
             }
-            observer(MaybeEvent<T>.success(object))
+            observer.on(.next(object))
             return Disposables.create()
             }.subscribeOn(cacheScheduler)
     }

@@ -26,11 +26,11 @@ final class TweetCase<Cache>:Model.TweetCase where Cache:DefaultCache,Cache.T ==
     
     func fetchTweetImage(ImageUrl url: String) -> Observable<Data> {
         let local = cache.fetch(withPath: url).asObservable()
-        let fetchNetwork = self.network.fetchImg(absoluteImgUrl: url).flatMap {data in
-            return self.cache.save(object:data, withPath: url)
-                .asObservable()
-                .map(Data.self)
-                .concat(Observable.just(data))
+        
+        //此处还需重构，将cache封装到服务中，根据缓存策略进行依赖注入到网络请求中，来进行对应操作
+        let fetchNetwork = self.network.fetchImg(absoluteImgUrl: url).map{data -> (Data) in
+            self.cache.save(object: data, withPath: url)
+            return data
         }
         return local.concat(fetchNetwork)
     }

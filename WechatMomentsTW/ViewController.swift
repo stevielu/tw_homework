@@ -14,14 +14,17 @@ import RXNetworkPlatform
 class ViewController: UIViewController {
     private let services: Model.TweetCaseProvider = RXNetworkPlatform.TweetCaseProvider()
     private let disposeBag = DisposeBag()
+    private var tweet:TweetCase!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tweet = services.makeTweetCase()
         self.test()
+        
     }
 
     func test(){
-        let tweet = services.makeTweetCase()
+        
         tweet.fetchTweetImage(ImageUrl: "http://info.thoughtworks.com/rs/thoughtworks2/images/glyph_badge.png").subscribe(onNext: { data in
             DispatchQueue.main.async {
                 let imgView = UIImageView(image: UIImage(data: data))
@@ -43,7 +46,6 @@ class ViewController: UIViewController {
     }
     
     @objc func fetch(sender:UIButton){
-        let tweet = services.makeTweetCase()
         tweet.fetchTweetImage(ImageUrl: "http://info.thoughtworks.com/rs/thoughtworks2/images/glyph_badge.png").subscribe(onNext: { data in
             DispatchQueue.main.async {
                 let imgView = UIImageView(image: UIImage(data: data))

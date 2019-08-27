@@ -12,14 +12,14 @@ import Model
 public final class TweetCaseProvider: Model.TweetCaseProvider {
     
     private let networkProvider: NetworkProvider
-    
+
     public init() {
         networkProvider = NetworkProvider()
     }
     
     public func makeTweetCase() -> Model.TweetCase {
         return TweetCase(network: networkProvider.makeTweetsNetworkProvider(),
-                            cache: TWCache<Data>())
+                            cache: ImageService.shareInstance.cache)
     }
 }
 
