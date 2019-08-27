@@ -12,7 +12,8 @@ target 'Model' do
 
   # Pods for Model
   rx_swift
-
+  pod 'KeychainSwift'
+  
   target 'ModelTests' do
     inherit! :search_paths
     # Pods for testing
