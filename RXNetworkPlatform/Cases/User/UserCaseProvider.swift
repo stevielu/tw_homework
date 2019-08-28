@@ -15,7 +15,7 @@ public final class UserCaseProvider: Model.UserCaseProvider {
         networkProvider = NetworkProvider()
     }
     
-    public func makePostsUseCase() -> UsersCase {
+    public func makeUseCase() -> UsersCase {
         return UserCase(network: networkProvider.makeUserNetworkProvider(), cache: ImageService.shareInstance.cache)
     }
 }

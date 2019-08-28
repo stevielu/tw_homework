@@ -12,7 +12,7 @@ final class NetworkProvider{
     private let apiEndpoint: String
     
     public init() {
-        apiEndpoint = "http://thoughtworks-ios.herokuapp.com/"
+        apiEndpoint = "http://thoughtworks-ios.herokuapp.com"
     }
     
     public func makeUserNetworkProvider() -> UserNetwork{
