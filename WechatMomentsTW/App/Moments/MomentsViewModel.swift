@@ -20,7 +20,7 @@ final class MomentsViewModel:ViewModelType{
     struct Output {
         let user: Driver<User>
 //        let tweet:Driver<Tweet>
-//        let avatar:Driver<UIImage>
+        let avatar:Driver<UIImage>
     }
     
     private let userScence: UsersCase
@@ -32,12 +32,27 @@ final class MomentsViewModel:ViewModelType{
     
     func transform(input: Input) -> Output {
         
-        let userInfo = input.appearTrigger.flatMapLatest{
-            return self.userScence.fetch(UserId: "jsmith").asDriver{error in
-                return Driver.empty()
-            }
+        let fetchUser = self.userScence.fetch(UserId: "jsmith").asDriverOnError()
+        let userInfo = input.appearTrigger.asObservable().concat(fetchUser)
+        let avatar = fetchUser.map{ user in
+            return self.userScence.userAvatar(ImageUrl: user.avatar ?? "")
         }
+//        {
+//            return self.userScence.fetch(UserId: "jsmith").asDriverOnError()
+//        }
+//        let avatar = userInfo.map{ user -> UIImage in
+//            return self.userScence.userAvatar(ImageUrl: user.avatar ?? "").map{ content ->UIImage in
+//                return UIImage(data: content)!
+//            }.asObservable()
+//
+//        }
         
-        return Output(user: userInfo)
+//            .map{ user -> UserItemViewModel in
+//                let avatar = self.userScence.userAvatar(ImageUrl: user.avatar ?? "")
+//                let profile = self.userScence.userProfile(ImageUrl: user.profileImage ?? "")
+//                return Observable.zip(avatar,profile, resultSelector:UserItemViewModel.finished)
+//        }
+        return Output(user: userInfo,avatar: avatar)
     }
 }
+
