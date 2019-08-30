@@ -42,10 +42,7 @@ class MomentsViewController: TWBaseTVC {
     private func bindViewModel() {
         
         let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
-            .mapToVoid().asDriver{error in
-                return Driver.empty()
-                
-        }
+            .mapVoid().asDriverOnError()
         let input = MomentsViewModel.Input(appearTrigger: viewWillAppear)
         
         let output = viewModel.transform(input: input)

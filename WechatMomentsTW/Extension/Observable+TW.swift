@@ -11,7 +11,13 @@ import RxSwift
 import RxCocoa
 
 extension ObservableType {
-    func mapToVoid() -> Observable<Void> {
+    func mapVoid() -> Observable<Void> {
         return map { _ in }
+    }
+    
+    func asDriverOnError() -> Driver<E> {
+        return asDriver { error in
+            return Driver.empty()
+        }
     }
 }
