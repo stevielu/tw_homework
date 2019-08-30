@@ -19,6 +19,9 @@ public final class TweetsNetwork{
     
     public func fetchTweets(userId:String) -> Observable<[Tweet]>{
         return self.network.getItems("user/\(userId)/tweets")
+            .map{
+                $0.filter{$0.sender == nil || ($0.content == nil && $0.images == nil)}
+            }
     }
     
     public func fetchImg(absoluteImgUrl:String) -> Observable<Data>{
