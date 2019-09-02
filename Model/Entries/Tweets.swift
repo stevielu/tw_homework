@@ -20,7 +20,7 @@ public struct TweetList:Codable {
 public struct Tweet:Codable {
     public let content:String?
     public let images:[PhotoGroup]?
-    public let comments:Comments?
+    public let comments:[Comments]?
     public let sender:User?
     public let unknown: String?
 }

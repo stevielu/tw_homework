@@ -12,19 +12,24 @@ import Model
 import RxSwift
 import RxCocoa
 
-final class MomentsViewModel:ViewModelType{
+final class MomentsViewModel:TWBaseViewModel,ViewModelType{
     struct Input {
         let appearTrigger: Driver<Void>
+        let headerRefresh: Driver<Void>
     }
     
     struct Output {
-        let user: Driver<User>
-//        let tweet:Driver<Tweet>
-        let avatar:Driver<UIImage>
+        let moments: Driver<MomentsItemViewModel>
+        let pullRefresh: Driver<MomentsItemViewModel>
     }
     
     private let userScence: UsersCase
     private let tweetScence: TweetCase
+    
+
+    var endHeaderRefreshing: Driver<Bool>!
+   
+    
     init(scences: UsersCase,tweet:TweetCase) {
         self.userScence = scences
         self.tweetScence = tweet
@@ -32,27 +37,29 @@ final class MomentsViewModel:ViewModelType{
     
     func transform(input: Input) -> Output {
         
-        let fetchUser = self.userScence.fetch(UserId: "jsmith").asDriverOnError()
-        let userInfo = input.appearTrigger.asObservable().concat(fetchUser)
-        let avatar = fetchUser.map{ user in
-            return self.userScence.userAvatar(ImageUrl: user.avatar ?? "")
-        }
-//        {
-//            return self.userScence.fetch(UserId: "jsmith").asDriverOnError()
-//        }
-//        let avatar = userInfo.map{ user -> UIImage in
-//            return self.userScence.userAvatar(ImageUrl: user.avatar ?? "").map{ content ->UIImage in
-//                return UIImage(data: content)!
-//            }.asObservable()
-//
-//        }
         
-//            .map{ user -> UserItemViewModel in
-//                let avatar = self.userScence.userAvatar(ImageUrl: user.avatar ?? "")
-//                let profile = self.userScence.userProfile(ImageUrl: user.profileImage ?? "")
-//                return Observable.zip(avatar,profile, resultSelector:UserItemViewModel.finished)
-//        }
-        return Output(user: userInfo,avatar: avatar)
+        
+        let user = self.userScence.fetch(UserId: TWGlobalValue.shareInstance.uid ?? "").asObservable()
+        let tweets = self.tweetScence.fetchTweets(UserId: TWGlobalValue.shareInstance.uid ?? "").asObservable()
+
+        let model = Observable.zip(user,tweets) { (user,tweets) -> MomentsItemViewModel in
+            return MomentsItemViewModel(with: user, tweets: tweets)
+            }.asDriverOnError()
+        
+        let headerRefreshData = input.headerRefresh.flatMapLatest{
+            return model
+        }
+        
+
+        
+        let moments = input.appearTrigger.flatMapLatest{
+            return model
+        }
+
+        self.endHeaderRefreshing = headerRefreshData.map{ _ in true }
+       
+        
+        return Output(moments: moments, pullRefresh: headerRefreshData)
     }
 }
 

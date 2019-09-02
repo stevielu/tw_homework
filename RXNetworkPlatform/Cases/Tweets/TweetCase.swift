@@ -21,7 +21,9 @@ final class TweetCase<Cache>:Model.TweetCase where Cache:DefaultCache,Cache.T ==
     }
     
     func fetchTweets(UserId uid: String) -> Observable<[Tweet]> {
-        return self.network.fetchTweets(userId: uid)
+        return self.network.fetchTweets(userId: uid).map{
+            $0.filter{$0.sender != nil && ($0.content != nil || $0.images != nil)}
+        }
     }
     
     func fetchTweetImage(ImageUrl url: String) -> Observable<Data> {

@@ -48,7 +48,9 @@ target 'WechatMomentsTW' do
 
   # Pods for WechatMomentsTW
   rx_swift
-
+  pod 'SnapKit'
+  pod 'RxDataSources'
+  pod 'RxOptional'
   target 'WechatMomentsTWTests' do
     inherit! :search_paths
     # Pods for testing

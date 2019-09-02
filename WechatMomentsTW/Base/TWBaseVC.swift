@@ -15,8 +15,9 @@ class TWBaseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.didLoadHandle()
         self.configureView()
+        self.didLoadHandle()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

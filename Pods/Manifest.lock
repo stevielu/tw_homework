@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
+  - Differentiator (3.1.0)
   - KeychainSwift (13.0.0)
   - MJRefresh (3.1.16)
   - RxAlamofire (4.3.0):
@@ -10,8 +11,16 @@ PODS:
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -19,17 +28,38 @@ DEPENDENCIES:
   - MJRefresh
   - RxAlamofire
   - RxCocoa (~> 4.0)
+  - RxDataSources
+  - RxOptional
   - RxSwift (~> 4.0)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Differentiator
+    - KeychainSwift
+    - MJRefresh
+    - RxAlamofire
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxOptional
+    - RxSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 63e236debf0b8badbe470d60b69a2a369f34f3ea
+PODFILE CHECKSUM: 82368ff95bdb6747d2396a8094411c4fee79700b
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.7.5

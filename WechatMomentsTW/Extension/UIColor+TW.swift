@@ -11,7 +11,7 @@ import UIKit
 extension UIColor {
     static let transparent = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
     static let lightBlue = #colorLiteral(red: 0.8745098039, green: 0.8784313725, blue: 1, alpha: 1)
-    static let darkBlue = #colorLiteral(red: 0.2, green: 0.2117647059, blue: 0.4352941176, alpha: 1)
+    static let titleBlue = #colorLiteral(red: 0.2, green: 0.2117647059, blue: 0.4352941176, alpha: 1)
     static let titleBlack = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
     static let subTitleBlack = #colorLiteral(red: 0.3254901961, green: 0.3529411765, blue: 0.4352941176, alpha: 1)
     static let subTitleGray = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 0.350973887)
